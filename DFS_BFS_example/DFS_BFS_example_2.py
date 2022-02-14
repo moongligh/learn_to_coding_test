@@ -30,7 +30,7 @@ def bfs(x, y):
 
       if nx < 0 or nx >= N or ny <0 or ny >= M: #미로 찾기 공간을 벗어난 경우 무시하기
         continue
-      if miro[nx][ny] == 0: #미로의 벽인 경우 무시하기
+      if miro[nx][ny] == 0: #괴물인 경우 넘어가기
         continue
       if miro[nx][ny] == 1: #해당 노드를 처음 방문하는 경우에만 최단 거리 기록
         miro[nx][ny] = miro[x][y] + 1
