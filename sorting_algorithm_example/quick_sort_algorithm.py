@@ -7,7 +7,7 @@ def quick_sort(array, start, end):
   left = start + 1
   right = end
   while(left <= right):
-    #피벗보다 컷 데이터를 찾을 때까지 반복하기
+    #피벗보다 큰 데이터를 찾을 때까지 반복하기
     while(left <= end and array[left] <= array[pivot]): 
       left += 1
     #피벗보다 작은 데이터를 찾을 때까지 반복하기
